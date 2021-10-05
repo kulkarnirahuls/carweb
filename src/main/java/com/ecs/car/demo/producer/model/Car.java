@@ -2,19 +2,11 @@ package com.ecs.car.demo.producer.model;
 
 public class Car {
 
-    private Long id;
-    private String make;
-    private String model;
-    private String colour;
-    private Long year;
-
-    public Car(Long id, String make, String model, String colour, Long year){
-        this.id = id;
-        this.make = make;
-        this.model = model;
-        this.colour = colour;
-        this.year = year;
-    }
+    public Long id;
+    public String make;
+    public String model;
+    public String colour;
+    public Long year;
 
     public Long getId() {
         return id;

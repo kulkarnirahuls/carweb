@@ -17,6 +17,6 @@ public class AddCarRestController {
 
     @PostMapping(value = "add")
     public CarMessage add(@RequestBody Car car)throws Exception {
-      return new CarMessage(null,carServiceImpl.add(car));
+      return carServiceImpl.add(car);
     }
 }

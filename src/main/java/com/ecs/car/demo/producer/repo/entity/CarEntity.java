@@ -13,12 +13,6 @@ public class CarEntity {
     private String colour;
     private Long year;
 
-    public CarEntity(String make,String model,String colour,Long year){
-        this.make = make;
-        this.model = model;
-        this.colour = colour;
-        this.year = year;
-    }
     public Long getId() {
         return id;
     }

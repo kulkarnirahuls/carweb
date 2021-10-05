@@ -1,8 +1,12 @@
 package com.ecs.car.demo.producer.service;
 
+import com.ecs.car.demo.producer.message.CarMessage;
 import com.ecs.car.demo.producer.model.Car;
-import com.ecs.car.demo.producer.model.Message;
+
+
+import java.util.List;
 
 public interface CarService {
-    public Message add(Car car);
+    public CarMessage add(Car car);
+    public CarMessage retrieve();
 }
