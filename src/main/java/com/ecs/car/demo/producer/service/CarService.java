@@ -9,4 +9,5 @@ import java.util.List;
 public interface CarService {
     public CarMessage add(Car car);
     public CarMessage retrieve();
+    public CarMessage remove(Long id);
 }

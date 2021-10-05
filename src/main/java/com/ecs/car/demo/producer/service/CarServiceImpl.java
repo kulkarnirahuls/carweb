@@ -55,4 +55,22 @@ public class CarServiceImpl implements CarService {
         }
         return carMessage;
     }
+
+    @Override
+    public CarMessage remove(Long id) {
+        CarMessage carMessage = null;
+        try{
+            //Remove Cars
+            carRepo.deleteById(id);
+            carMessage = new CarMessage(null,
+                    new Message(ServiceEnum.S003.toString(),
+                            "Car removed successfully"));
+        }catch (Exception e){
+            logger.log(Level.SEVERE,e.getMessage(),e);
+            carMessage = new CarMessage(null,
+                    new Message(ServiceEnum.E003.toString(),
+                            e.getMessage()));
+        }
+        return carMessage;
+    }
 }
