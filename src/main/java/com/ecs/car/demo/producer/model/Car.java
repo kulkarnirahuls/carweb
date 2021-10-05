@@ -1,5 +1,10 @@
-package com.ecs.car.demo.producer.dto;
+package com.ecs.car.demo.producer.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class Car {
     private Long id;
     private String make;

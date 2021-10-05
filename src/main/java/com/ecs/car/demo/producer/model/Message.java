@@ -1,4 +1,4 @@
-package com.ecs.car.demo.producer.dto;
+package com.ecs.car.demo.producer.model;
 
 public class Message {
     private String message=null;
