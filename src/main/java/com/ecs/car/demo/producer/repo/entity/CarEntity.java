@@ -1,21 +1,24 @@
-package com.ecs.car.demo.producer.model;
+package com.ecs.car.demo.producer.repo.entity;
 
-public class Car {
+import javax.persistence.*;
 
+@Entity
+@Table
+public class CarEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String make;
     private String model;
     private String colour;
     private Long year;
 
-    public Car(Long id, String make, String model, String colour, Long year){
-        this.id = id;
+    public CarEntity(String make,String model,String colour,Long year){
         this.make = make;
         this.model = model;
         this.colour = colour;
         this.year = year;
     }
-
     public Long getId() {
         return id;
     }
@@ -56,3 +59,4 @@ public class Car {
         this.year = year;
     }
 }
+
